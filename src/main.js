@@ -10,7 +10,8 @@ const main = document.querySelector('.main'),
     backBtn = main.querySelector('.back'),
     nextBtn = main.querySelector('.next'),
     progressArea = main.querySelector('.progress-area'),
-    progressBar = main.querySelector('.progress-bar');
+    progressBar = main.querySelector('.progress-bar'),
+    navList = main.querySelector('.nav__list');
 
 let musicIndex = Math.floor(Math.random() * allMusic.length + 1);
 
@@ -123,7 +124,15 @@ function nextMusic() {
     loadMusic(musicIndex);
     playMusic();
 }
-
+//toastMs
+navList.addEventListener('click', () => {
+    toast({
+        title: 'Info',
+        message: 'Coming soon...',
+        type: 'info',
+        duration: 2500
+    });
+});
 // Play, Pause Btn Event
 playBtn.addEventListener('click', () => {
     const isMusicPause = playBtn.classList.contains('active');
@@ -149,6 +158,7 @@ nextBtn.addEventListener('click', () => {
     playingNow();
     scrollActiveSongToView();
 });
+
 
 // Progress Bar Update Time
 mainAudio.addEventListener('timeupdate', (e) => {
@@ -188,6 +198,8 @@ progressArea.addEventListener('click', (e) => {
     mainAudio.currentTime = (clickOffSetX * songDuration) / progressWidthValue;
     playMusic();
 });
+
+
 
 // Song Repeat, Shuffle
 const repeatBtn = main.querySelector('.repeat');
