@@ -1,0 +1,312 @@
+@media (max-width: 1308px) {
+    /* .song-player {
+        position: sticky;
+        top: 30px;
+    } */
+    .song-info__author {
+        max-width: 111px;
+    }.song-info__name {
+        max-width: 295px;
+    }
+}
+@media (max-width: 1255px) {
+    .choice__item:last-child {
+        display: none;
+    }
+}
+@media (max-width: 1226px) {
+    .songs-list {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .song-info__author {
+        max-width: 80px;
+    }.song-info__name {
+        max-width: 250px;
+    }
+}
+@media (max-width: 1177px) {
+    .song-info__author {
+        max-width: 70px;
+    }.song-info__name {
+        max-width: 230px;
+    }
+}
+@media (min-width: 1022px) and (max-width: 1112px) {
+    .header {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container {
+        width: 85.4%;
+    }
+    .song-info__author {
+        max-width: 60px;
+    }.song-info__name {
+        max-width: 210px;
+    }
+    #bar {
+        display: block;
+    }
+    .nav__mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .nav {
+        display: none;
+    }
+    #bar {
+        display: block;
+    }
+}
+
+@media (max-width: 925px) {
+    .choice__item:nth-child(6) {
+        display: none;
+    }
+    .song-info__author {
+        max-width: 60px;
+    }.song-info__name {
+        max-width: 210px;
+    }
+}
+
+@media (max-width: 862px) {
+    .song-info__author {
+        max-width: 50px;
+    }.song-info__name {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 805px) {
+    .choice-wrap {
+        display: none;
+    }
+    .main-area {
+        flex-direction: column-reverse;
+    }
+    .song-player {
+        width: 97%;
+        margin: 0 auto;
+    }
+    .song-player__playing {
+        width: 96%;
+        margin: 60px auto 0;
+    }
+    .disc-wrap img { 
+        width: 30%;
+    }
+    .disc-wrap__name { 
+        margin-top: 6px;
+    }
+    .disc-wrap__author {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    .main-area__heading {
+        margin-top: 24px;
+    }
+    .songs-list__songs {
+        width: 185%;
+    }
+    .song-player .main-area__heading {
+        display: none;
+    }
+    .song-info__author {
+        max-width: 20%;
+    }.song-info__name {
+        max-width: 45%;
+    }
+    .song {
+        position: relative;
+    }
+    .love, .love-fill {
+        position: absolute;
+        right: 6px;
+    }
+}
+
+@media (max-width: 749px) {
+    .song-info__author {
+        max-width: 25%;
+    }.song-info__name {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 739px) {
+    .choice-wrap {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .main-area {
+        flex-direction: column-reverse;
+    }
+    .disc-wrap img { 
+        width: 35%;
+    }
+    .songs-list__songs {
+        width: 181%;
+    }
+}
+
+@media (max-width: 711px) {
+    .song-info__author {
+        max-width: 162px;
+    }.song-info__name {
+        max-width: 277px;
+    }
+}
+
+@media (max-width: 692px) {
+    .song-info__author {
+        max-width: 148px;
+    }.song-info__name {
+        max-width: 278px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header__upgrade {
+        display: none;
+    }
+}
+
+@media (max-width: 633px) {
+    .song-info__author {
+        max-width: 122px;
+    }.song-info__name {
+        max-width: 255px;
+    }
+}
+
+@media (max-width: 610px) {
+    .song-info__author {
+        max-width: 97px;
+    }.song-info__name {
+        max-width: 234px;
+    }
+}
+
+@media (max-width: 544px) {
+    .song-info__author {
+        max-width: 87px;
+    }.song-info__name {
+        max-width: 202px;
+    }
+    .header__setting-set {
+        display: none;
+    }
+    .disc-wrap img { 
+        width: 40%;
+    }
+    .songs-list__songs {
+        width: 178%;
+    }
+}
+
+@media (max-width: 493px) {
+    .song-info__author {
+        max-width: 76px;
+    }.song-info__name {
+        max-width: 174px;
+    }
+}
+
+@media (max-width: 481px) {
+    .song-info__author {
+        max-width: 74px;
+    }.song-info__name {
+        max-width: 170px;
+    }
+    .disc-wrap img { 
+        width: 45%;
+    }
+}
+
+@media (max-width: 460px) {
+    .header__setting-noti {
+        display: none;
+    }
+}
+@media (max-width: 444px) {
+    .header__search-input {
+        width: 265px;
+    }
+    .songs-list__songs {
+        width: 176%;
+    }
+    .song-info__author {
+        max-width: 64px;
+    }.song-info__name {
+        max-width: 155px;
+    }
+}
+
+@media (max-width: 415px) {
+    .song-info__author {
+        max-width: 60px;
+    }.song-info__name {
+        max-width: 121px;
+    }
+}
+
+@media (max-width: 403px) {
+    .song-info__author {
+        max-width: 58px;
+    }.song-info__name {
+        max-width: 117px;
+    }
+    .disc-wrap img { 
+        width: 50%;
+    }
+}
+
+@media (max-width: 365px) {
+    .song-info__author {
+        max-width: 55px;
+    }.song-info__name {
+        max-width: 110px;
+    }
+}
+
+@media (max-width: 358px) {
+    .header__search-input {
+        width: 220px;
+    }
+    .song-info__author {
+        max-width: 50px;
+    }.song-info__name {
+        max-width: 100px;
+    }
+    .songs-list__songs {
+        width: 173%;
+    }
+}
+
+@media (max-width: 341px) {
+    .song-info__author {
+        max-width: 45px;
+    }.song-info__name {
+        max-width: 95px;
+    }
+}
+
+@media (max-width: 330px) {
+    .song-info__author {
+        max-width: 40px;
+    }.song-info__name {
+        max-width: 83px;
+    }
+}
+
+@media (max-width: 325px) {
+    .header__search-input {
+        width: 200px;
+    }
+}
