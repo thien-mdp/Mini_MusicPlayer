@@ -1352,7 +1352,6 @@ i.play, i.pause {
       }
     75% {
             max-height: 15rem;
-            padding: 2.4rem;
             opacity: 0;
             transform: translateX(100%);
     }
