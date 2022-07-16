@@ -1321,6 +1321,7 @@ i.play, i.pause {
     z-index: 99999;
   }
   .toast{
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -1329,10 +1330,9 @@ i.play, i.pause {
     padding: 8px 0;
     min-width: 400px;
     max-width: 450px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     /* animation: slideInleft ease .5s, fadeOut linear 1s 3s forwards; */
-    transition: all linear .3s;
     
   }
   @keyframes slideInleft {
@@ -1346,10 +1346,22 @@ i.play, i.pause {
     }
   }
   @keyframes fadeOut{
-    to{
-        opacity: 0;
+    0% {
+        opacity: .6;
+        transform: translateX(0%);
+      }
+    75% {
+            max-height: 15rem;
+            padding: 2.4rem;
+            opacity: 0;
+            transform: translateX(100%);
     }
-  }
+    100% {
+            max-height: 0;
+            padding: 0;
+            transform: translateX(100%);
+    }
+}
   .toast--success{
     border-color: #47d864;
   }
@@ -1435,16 +1447,22 @@ i.play, i.pause {
     width: 30%;
     background-color: #ff623d;
   }
-  .toast .progress {
+  /* .toast .progress {
     position: absolute;
     bottom: 0;
     right: 0;
     height: 3.3px;
     width: 100%;
   
-  }
-  .progress{
-    max-width: 197px;
+  } */
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 0 0 0 0.5rem;
+    transform-origin: left;
   }
   .toast .progress:before {
     content: "";
@@ -1453,13 +1471,13 @@ i.play, i.pause {
     right: 0;
     height: 100%;
     width: 100%;
-    
     background-image: linear-gradient(
         64.5deg,
         rgba(245, 116, 185, 1) 14.7%,
         rgba(89, 97, 223, 1) 88.7%
       )
   }
+
   
   .progress.active:before {
     animation: progress 2.8s ease-in-out forwards;
@@ -1470,4 +1488,3 @@ i.play, i.pause {
       right: 100%;
     }
   }
-  

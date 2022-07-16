@@ -13,7 +13,7 @@ function toast({
 
           const autoRemove = setTimeout(function () {
               main.removeChild(toast)
-          }, duration + 1000)
+          }, duration +380)
 
           toast.onclick = function(e){
               if(e.target.closest('.toast__close')){
@@ -33,7 +33,7 @@ function toast({
           const delay = (duration/1000).toFixed(2)
 
           toast.classList.add('toast', `toast--${type}`);
-          toast.style.animation = `slideInleft ease .3s, fadeOut linear 1s ${delay}s forwards`;
+          toast.style.animation = `slideInleft linear .3s, fadeOut 1s ${delay}s forwards`;
 
 
           toast.innerHTML = `

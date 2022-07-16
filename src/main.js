@@ -11,7 +11,8 @@ const main = document.querySelector('.main'),
     nextBtn = main.querySelector('.next'),
     progressArea = main.querySelector('.progress-area'),
     progressBar = main.querySelector('.progress-bar'),
-    navList = main.querySelector('.nav__list');
+    navList = main.querySelector('.nav__list'),
+    navListMB = main.querySelector('.nav__mobile .nav__list');
 
 let musicIndex = Math.floor(Math.random() * allMusic.length + 1);
 
@@ -126,6 +127,14 @@ function nextMusic() {
 }
 //toastMs
 navList.addEventListener('click', () => {
+    toast({
+        title: 'Info',
+        message: 'Coming soon...',
+        type: 'info',
+        duration: 2500
+    });
+});
+navListMB.addEventListener('click', () => {
     toast({
         title: 'Info',
         message: 'Coming soon...',
