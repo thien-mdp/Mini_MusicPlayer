@@ -216,6 +216,9 @@
     }.song-info__name {
         max-width: 174px;
     }
+    #toast  {
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 481px) {
@@ -226,6 +229,9 @@
     }
     .disc-wrap img { 
         width: 45%;
+    }
+    #toast  {
+        max-width: 160px;
     }
 }
 
@@ -246,6 +252,9 @@
     }.song-info__name {
         max-width: 155px;
     }
+    #toast  {
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 415px) {
@@ -253,6 +262,9 @@
         max-width: 60px;
     }.song-info__name {
         max-width: 121px;
+    }
+    #toast  {
+        max-width: 160px;
     }
 }
 
@@ -265,6 +277,9 @@
     .disc-wrap img { 
         width: 50%;
     }
+    #toast  {
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 365px) {
@@ -272,6 +287,9 @@
         max-width: 55px;
     }.song-info__name {
         max-width: 110px;
+    }
+    #toast  {
+        max-width: 160px;
     }
 }
 
@@ -287,6 +305,9 @@
     .songs-list__songs {
         width: 173%;
     }
+    #toast  {
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 341px) {
@@ -294,6 +315,9 @@
         max-width: 45px;
     }.song-info__name {
         max-width: 95px;
+    }
+    #toast  {
+        max-width: 160px;
     }
 }
 
@@ -303,10 +327,16 @@
     }.song-info__name {
         max-width: 83px;
     }
+    #toast  {
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 325px) {
     .header__search-input {
         width: 200px;
+    }
+    #toast  {
+        max-width: 160px;
     }
 }

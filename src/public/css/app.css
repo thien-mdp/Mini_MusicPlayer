@@ -1330,7 +1330,7 @@ i.play, i.pause {
     padding: 8px 0;
     min-width: 400px;
     max-width: 450px;
-    box-shadow: 5px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     /* animation: slideInleft ease .5s, fadeOut linear 1s 3s forwards; */
     
@@ -1352,7 +1352,6 @@ i.play, i.pause {
       }
     75% {
             max-height: 15rem;
-            padding: 2.4rem;
             opacity: 0;
             transform: translateX(100%);
     }
