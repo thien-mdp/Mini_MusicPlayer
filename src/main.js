@@ -131,7 +131,7 @@ navList.addEventListener('click', () => {
         title: 'Info',
         message: 'Coming soon...',
         type: 'info',
-        duration: 2500
+        duration: 2500,
     });
 });
 navListMB.addEventListener('click', () => {
@@ -139,7 +139,7 @@ navListMB.addEventListener('click', () => {
         title: 'Info',
         message: 'Coming soon...',
         type: 'info',
-        duration: 2500
+        duration: 2500,
     });
 });
 // Play, Pause Btn Event
@@ -167,7 +167,6 @@ nextBtn.addEventListener('click', () => {
     playingNow();
     scrollActiveSongToView();
 });
-
 
 // Progress Bar Update Time
 mainAudio.addEventListener('timeupdate', (e) => {
@@ -207,8 +206,6 @@ progressArea.addEventListener('click', (e) => {
     mainAudio.currentTime = (clickOffSetX * songDuration) / progressWidthValue;
     playMusic();
 });
-
-
 
 // Song Repeat, Shuffle
 const repeatBtn = main.querySelector('.repeat');
